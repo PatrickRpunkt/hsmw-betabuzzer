@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5930A8931A418A760076B788 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5930A8921A418A760076B788 /* main.m */; };
+		5930A8961A418A760076B788 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5930A8951A418A760076B788 /* AppDelegate.m */; };
+		5930A89C1A418A760076B788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5930A89A1A418A760076B788 /* Main.storyboard */; };
+		5930A89E1A418A760076B788 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5930A89D1A418A760076B788 /* Images.xcassets */; };
+		5930A8A11A418A760076B788 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5930A89F1A418A760076B788 /* LaunchScreen.xib */; };
+		5930A8AD1A418A760076B788 /* BETA_BuzzerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5930A8AC1A418A760076B788 /* BETA_BuzzerTests.m */; };
+		5930A8BE1A418EDB0076B788 /* BuzzerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5930A8BD1A418EDB0076B788 /* BuzzerViewController.m */; };
+		599864871A656507004E33E1 /* TeamSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 599864861A656507004E33E1 /* TeamSelectorViewController.m */; };
+		599864921A65754C004E33E1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 599864911A65754C004E33E1 /* AudioToolbox.framework */; };
+		599864961A657F35004E33E1 /* yoshi_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 599864951A657F35004E33E1 /* yoshi_1.mp3 */; };
+		599864971A65802E004E33E1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 599864931A6575CE004E33E1 /* AVFoundation.framework */; };
+		5998649A1A65825C004E33E1 /* yoshi_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 599864981A65825C004E33E1 /* yoshi_2.mp3 */; };
+		5998649B1A65825C004E33E1 /* yoshi_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 599864991A65825C004E33E1 /* yoshi_3.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5930A8A71A418A760076B788 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5930A8851A418A760076B788 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5930A88C1A418A760076B788;
+			remoteInfo = "BETA-Buzzer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5930A88D1A418A760076B788 /* BETA-Buzzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BETA-Buzzer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5930A8911A418A760076B788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5930A8921A418A760076B788 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5930A8941A418A760076B788 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5930A8951A418A760076B788 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5930A89B1A418A760076B788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5930A89D1A418A760076B788 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5930A8A01A418A760076B788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5930A8A61A418A760076B788 /* BETA-BuzzerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BETA-BuzzerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5930A8AB1A418A760076B788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5930A8AC1A418A760076B788 /* BETA_BuzzerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BETA_BuzzerTests.m; sourceTree = "<group>"; };
+		5930A8BC1A418EDB0076B788 /* BuzzerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuzzerViewController.h; sourceTree = "<group>"; };
+		5930A8BD1A418EDB0076B788 /* BuzzerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuzzerViewController.m; sourceTree = "<group>"; };
+		599864851A656507004E33E1 /* TeamSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamSelectorViewController.h; sourceTree = "<group>"; };
+		599864861A656507004E33E1 /* TeamSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamSelectorViewController.m; sourceTree = "<group>"; };
+		5998648F1A657498004E33E1 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		599864911A65754C004E33E1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		599864931A6575CE004E33E1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		599864951A657F35004E33E1 /* yoshi_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yoshi_1.mp3; sourceTree = "<group>"; };
+		599864981A65825C004E33E1 /* yoshi_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yoshi_2.mp3; sourceTree = "<group>"; };
+		599864991A65825C004E33E1 /* yoshi_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yoshi_3.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5930A88A1A418A760076B788 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599864971A65802E004E33E1 /* AVFoundation.framework in Frameworks */,
+				599864921A65754C004E33E1 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5930A8A31A418A760076B788 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5930A8841A418A760076B788 = {
+			isa = PBXGroup;
+			children = (
+				599864931A6575CE004E33E1 /* AVFoundation.framework */,
+				599864911A65754C004E33E1 /* AudioToolbox.framework */,
+				5998648F1A657498004E33E1 /* AVKit.framework */,
+				5930A88F1A418A760076B788 /* BETA-Buzzer */,
+				5930A8A91A418A760076B788 /* BETA-BuzzerTests */,
+				5930A88E1A418A760076B788 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5930A88E1A418A760076B788 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5930A88D1A418A760076B788 /* BETA-Buzzer.app */,
+				5930A8A61A418A760076B788 /* BETA-BuzzerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5930A88F1A418A760076B788 /* BETA-Buzzer */ = {
+			isa = PBXGroup;
+			children = (
+				599864841A656192004E33E1 /* Sounds */,
+				5930A8941A418A760076B788 /* AppDelegate.h */,
+				5930A8951A418A760076B788 /* AppDelegate.m */,
+				5930A89A1A418A760076B788 /* Main.storyboard */,
+				5930A89D1A418A760076B788 /* Images.xcassets */,
+				5930A89F1A418A760076B788 /* LaunchScreen.xib */,
+				5930A8901A418A760076B788 /* Supporting Files */,
+				5998648E1A65742A004E33E1 /* ViewController */,
+			);
+			path = "BETA-Buzzer";
+			sourceTree = "<group>";
+		};
+		5930A8901A418A760076B788 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5930A8911A418A760076B788 /* Info.plist */,
+				5930A8921A418A760076B788 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5930A8A91A418A760076B788 /* BETA-BuzzerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5930A8AC1A418A760076B788 /* BETA_BuzzerTests.m */,
+				5930A8AA1A418A760076B788 /* Supporting Files */,
+			);
+			path = "BETA-BuzzerTests";
+			sourceTree = "<group>";
+		};
+		5930A8AA1A418A760076B788 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5930A8AB1A418A760076B788 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		599864841A656192004E33E1 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				599864981A65825C004E33E1 /* yoshi_2.mp3 */,
+				599864991A65825C004E33E1 /* yoshi_3.mp3 */,
+				599864951A657F35004E33E1 /* yoshi_1.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		5998648E1A65742A004E33E1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				599864861A656507004E33E1 /* TeamSelectorViewController.m */,
+				599864851A656507004E33E1 /* TeamSelectorViewController.h */,
+				5930A8BC1A418EDB0076B788 /* BuzzerViewController.h */,
+				5930A8BD1A418EDB0076B788 /* BuzzerViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5930A88C1A418A760076B788 /* BETA-Buzzer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5930A8B01A418A760076B788 /* Build configuration list for PBXNativeTarget "BETA-Buzzer" */;
+			buildPhases = (
+				5930A8891A418A760076B788 /* Sources */,
+				5930A88A1A418A760076B788 /* Frameworks */,
+				5930A88B1A418A760076B788 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BETA-Buzzer";
+			productName = "BETA-Buzzer";
+			productReference = 5930A88D1A418A760076B788 /* BETA-Buzzer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5930A8A51A418A760076B788 /* BETA-BuzzerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5930A8B31A418A760076B788 /* Build configuration list for PBXNativeTarget "BETA-BuzzerTests" */;
+			buildPhases = (
+				5930A8A21A418A760076B788 /* Sources */,
+				5930A8A31A418A760076B788 /* Frameworks */,
+				5930A8A41A418A760076B788 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5930A8A81A418A760076B788 /* PBXTargetDependency */,
+			);
+			name = "BETA-BuzzerTests";
+			productName = "BETA-BuzzerTests";
+			productReference = 5930A8A61A418A760076B788 /* BETA-BuzzerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5930A8851A418A760076B788 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Patrick Reichelt";
+				TargetAttributes = {
+					5930A88C1A418A760076B788 = {
+						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					5930A8A51A418A760076B788 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 5930A88C1A418A760076B788;
+					};
+				};
+			};
+			buildConfigurationList = 5930A8881A418A760076B788 /* Build configuration list for PBXProject "BETA-Buzzer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5930A8841A418A760076B788;
+			productRefGroup = 5930A88E1A418A760076B788 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5930A88C1A418A760076B788 /* BETA-Buzzer */,
+				5930A8A51A418A760076B788 /* BETA-BuzzerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5930A88B1A418A760076B788 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5998649B1A65825C004E33E1 /* yoshi_3.mp3 in Resources */,
+				5930A89C1A418A760076B788 /* Main.storyboard in Resources */,
+				5930A8A11A418A760076B788 /* LaunchScreen.xib in Resources */,
+				5998649A1A65825C004E33E1 /* yoshi_2.mp3 in Resources */,
+				5930A89E1A418A760076B788 /* Images.xcassets in Resources */,
+				599864961A657F35004E33E1 /* yoshi_1.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5930A8A41A418A760076B788 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5930A8891A418A760076B788 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599864871A656507004E33E1 /* TeamSelectorViewController.m in Sources */,
+				5930A8BE1A418EDB0076B788 /* BuzzerViewController.m in Sources */,
+				5930A8961A418A760076B788 /* AppDelegate.m in Sources */,
+				5930A8931A418A760076B788 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5930A8A21A418A760076B788 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5930A8AD1A418A760076B788 /* BETA_BuzzerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5930A8A81A418A760076B788 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5930A88C1A418A760076B788 /* BETA-Buzzer */;
+			targetProxy = 5930A8A71A418A760076B788 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5930A89A1A418A760076B788 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5930A89B1A418A760076B788 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5930A89F1A418A760076B788 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5930A8A01A418A760076B788 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5930A8AE1A418A760076B788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5930A8AF1A418A760076B788 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5930A8B11A418A760076B788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BETA-Buzzer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		5930A8B21A418A760076B788 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BETA-Buzzer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		5930A8B41A418A760076B788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BETA-BuzzerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BETA-Buzzer.app/BETA-Buzzer";
+			};
+			name = Debug;
+		};
+		5930A8B51A418A760076B788 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BETA-BuzzerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BETA-Buzzer.app/BETA-Buzzer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5930A8881A418A760076B788 /* Build configuration list for PBXProject "BETA-Buzzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5930A8AE1A418A760076B788 /* Debug */,
+				5930A8AF1A418A760076B788 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5930A8B01A418A760076B788 /* Build configuration list for PBXNativeTarget "BETA-Buzzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5930A8B11A418A760076B788 /* Debug */,
+				5930A8B21A418A760076B788 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5930A8B31A418A760076B788 /* Build configuration list for PBXNativeTarget "BETA-BuzzerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5930A8B41A418A760076B788 /* Debug */,
+				5930A8B51A418A760076B788 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5930A8851A418A760076B788 /* Project object */;
+}

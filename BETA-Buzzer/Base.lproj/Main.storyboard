@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C94b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eVI-G3-AN9">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Buzzer View Controller-->
+        <scene sceneID="npV-a3-IBN">
+            <objects>
+                <viewController id="h23-SE-QgC" customClass="BuzzerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WWn-Yw-2YM"/>
+                        <viewControllerLayoutGuide type="bottom" id="5qe-bB-v6z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kpk-sd-NJX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quizz_beta_ohne_btn" translatesAutoresizingMaskIntoConstraints="NO" id="cII-Rk-Yjb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1w-Vf-svp">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="356" id="Avd-1U-Hpv"/>
+                                    <constraint firstAttribute="height" constant="356" id="WsT-aS-3mr"/>
+                                </constraints>
+                                <state key="normal" image="quizz_beta_button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Avd-1U-Hpv"/>
+                                        <exclude reference="WsT-aS-3mr"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Avd-1U-Hpv"/>
+                                        <include reference="WsT-aS-3mr"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="buzzerPressed:" destination="h23-SE-QgC" eventType="touchUpInside" id="NuU-mA-h8H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cII-Rk-Yjb" firstAttribute="centerX" secondItem="f1w-Vf-svp" secondAttribute="centerX" id="5pD-fT-OE6"/>
+                            <constraint firstAttribute="centerX" secondItem="f1w-Vf-svp" secondAttribute="centerX" id="Bge-X3-KaA"/>
+                            <constraint firstItem="cII-Rk-Yjb" firstAttribute="bottom" secondItem="5qe-bB-v6z" secondAttribute="top" id="MUH-QM-re8"/>
+                            <constraint firstAttribute="centerY" secondItem="f1w-Vf-svp" secondAttribute="centerY" id="RC7-Y4-Kdc"/>
+                            <constraint firstItem="cII-Rk-Yjb" firstAttribute="centerY" secondItem="f1w-Vf-svp" secondAttribute="centerY" id="XMN-UB-Hmi"/>
+                            <constraint firstItem="cII-Rk-Yjb" firstAttribute="leading" secondItem="kpk-sd-NJX" secondAttribute="leading" id="atk-YI-pqh"/>
+                            <constraint firstItem="cII-Rk-Yjb" firstAttribute="top" secondItem="WWn-Yw-2YM" secondAttribute="bottom" id="bRq-9v-W3A"/>
+                            <constraint firstItem="cII-Rk-Yjb" firstAttribute="top" secondItem="kpk-sd-NJX" secondAttribute="top" id="ddu-7Q-P24"/>
+                            <constraint firstItem="cII-Rk-Yjb" firstAttribute="leading" secondItem="kpk-sd-NJX" secondAttribute="leading" id="lxb-FU-cX7"/>
+                            <constraint firstItem="cII-Rk-Yjb" firstAttribute="bottom" secondItem="5qe-bB-v6z" secondAttribute="top" id="n7O-CE-vLQ"/>
+                            <constraint firstAttribute="trailing" secondItem="cII-Rk-Yjb" secondAttribute="trailing" id="obx-6c-Gks"/>
+                            <constraint firstAttribute="trailing" secondItem="cII-Rk-Yjb" secondAttribute="trailing" id="pum-X5-RSh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="f1w-Vf-svp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Bge-X3-KaA"/>
+                                <exclude reference="RC7-Y4-Kdc"/>
+                                <exclude reference="5pD-fT-OE6"/>
+                                <exclude reference="XMN-UB-Hmi"/>
+                                <exclude reference="atk-YI-pqh"/>
+                                <exclude reference="bRq-9v-W3A"/>
+                                <exclude reference="n7O-CE-vLQ"/>
+                                <exclude reference="pum-X5-RSh"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="f1w-Vf-svp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Bge-X3-KaA"/>
+                                <include reference="RC7-Y4-Kdc"/>
+                                <include reference="5pD-fT-OE6"/>
+                                <exclude reference="MUH-QM-re8"/>
+                                <include reference="XMN-UB-Hmi"/>
+                                <include reference="atk-YI-pqh"/>
+                                <include reference="bRq-9v-W3A"/>
+                                <exclude reference="ddu-7Q-P24"/>
+                                <exclude reference="lxb-FU-cX7"/>
+                                <include reference="n7O-CE-vLQ"/>
+                                <exclude reference="obx-6c-Gks"/>
+                                <include reference="pum-X5-RSh"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Glf-z5-GhC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1102.5" y="1237"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pFw-pG-fdc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="eVI-G3-AN9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FUl-cd-K1I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eTJ-mz-5MR" kind="relationship" relationship="rootViewController" id="0ET-aA-J9R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m5C-p5-cFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327" y="524"/>
+        </scene>
+        <!--Team Selector View Controller-->
+        <scene sceneID="krN-y5-0db">
+            <objects>
+                <viewController id="eTJ-mz-5MR" customClass="TeamSelectorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u4w-tc-j3N"/>
+                        <viewControllerLayoutGuide type="bottom" id="R9K-DC-vy8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vrT-Sz-Ouk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quizz_beta_nur_BG" translatesAutoresizingMaskIntoConstraints="NO" id="4C4-kR-Hnz">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCP-PG-sck">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="218" id="miO-Rd-gaT"/>
+                                    <constraint firstAttribute="width" constant="218" id="ysb-KK-a3M"/>
+                                </constraints>
+                                <state key="normal" image="pokeball">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="miO-Rd-gaT"/>
+                                        <exclude reference="ysb-KK-a3M"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="miO-Rd-gaT"/>
+                                        <include reference="ysb-KK-a3M"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="teamSelected:" destination="eTJ-mz-5MR" eventType="touchUpInside" id="b5v-N7-QMI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whD-hw-e1X">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="218" id="MhW-Ra-Mel"/>
+                                    <constraint firstAttribute="width" constant="218" id="rMd-NG-czV"/>
+                                </constraints>
+                                <state key="normal" image="pokeball">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MhW-Ra-Mel"/>
+                                        <exclude reference="rMd-NG-czV"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="MhW-Ra-Mel"/>
+                                        <include reference="rMd-NG-czV"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="teamSelected:" destination="eTJ-mz-5MR" eventType="touchUpInside" id="qco-bs-U8b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2c9-eJ-JwY">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="RU9-wm-Ij7"/>
+                                    <constraint firstAttribute="height" constant="218" id="ece-ka-a0e"/>
+                                </constraints>
+                                <state key="normal" image="pokeball">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="RU9-wm-Ij7"/>
+                                        <exclude reference="ece-ka-a0e"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="RU9-wm-Ij7"/>
+                                        <include reference="ece-ka-a0e"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="teamSelected:" destination="eTJ-mz-5MR" eventType="touchUpInside" id="fPh-NP-izN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YCP-PG-sck" firstAttribute="leading" secondItem="2c9-eJ-JwY" secondAttribute="trailing" constant="35" id="5LM-M3-5U9"/>
+                            <constraint firstItem="whD-hw-e1X" firstAttribute="leading" secondItem="YCP-PG-sck" secondAttribute="trailing" constant="35" id="6UM-cG-tqN"/>
+                            <constraint firstAttribute="centerY" secondItem="2c9-eJ-JwY" secondAttribute="centerY" constant="-26" id="9df-64-Aoa"/>
+                            <constraint firstAttribute="centerY" secondItem="YCP-PG-sck" secondAttribute="centerY" constant="-26" id="EF1-aD-J7B"/>
+                            <constraint firstItem="4C4-kR-Hnz" firstAttribute="leading" secondItem="vrT-Sz-Ouk" secondAttribute="leading" id="FoS-zq-eIq"/>
+                            <constraint firstItem="4C4-kR-Hnz" firstAttribute="bottom" secondItem="R9K-DC-vy8" secondAttribute="top" id="GKG-7e-ge8"/>
+                            <constraint firstItem="4C4-kR-Hnz" firstAttribute="top" secondItem="vrT-Sz-Ouk" secondAttribute="top" id="emk-0K-7Kx"/>
+                            <constraint firstAttribute="centerX" secondItem="YCP-PG-sck" secondAttribute="centerX" id="fkg-tE-iQ8"/>
+                            <constraint firstAttribute="centerY" secondItem="whD-hw-e1X" secondAttribute="centerY" constant="-26" id="hwV-8J-AKu"/>
+                            <constraint firstAttribute="trailing" secondItem="4C4-kR-Hnz" secondAttribute="trailing" id="zgF-qT-FrN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4C4-kR-Hnz"/>
+                                <exclude reference="YCP-PG-sck"/>
+                                <exclude reference="whD-hw-e1X"/>
+                                <exclude reference="2c9-eJ-JwY"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9df-64-Aoa"/>
+                                <exclude reference="5LM-M3-5U9"/>
+                                <exclude reference="EF1-aD-J7B"/>
+                                <exclude reference="fkg-tE-iQ8"/>
+                                <exclude reference="6UM-cG-tqN"/>
+                                <exclude reference="hwV-8J-AKu"/>
+                                <exclude reference="FoS-zq-eIq"/>
+                                <exclude reference="GKG-7e-ge8"/>
+                                <exclude reference="emk-0K-7Kx"/>
+                                <exclude reference="zgF-qT-FrN"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="4C4-kR-Hnz"/>
+                                <include reference="YCP-PG-sck"/>
+                                <include reference="whD-hw-e1X"/>
+                                <include reference="2c9-eJ-JwY"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9df-64-Aoa"/>
+                                <include reference="5LM-M3-5U9"/>
+                                <include reference="EF1-aD-J7B"/>
+                                <include reference="fkg-tE-iQ8"/>
+                                <include reference="6UM-cG-tqN"/>
+                                <include reference="hwV-8J-AKu"/>
+                                <include reference="FoS-zq-eIq"/>
+                                <include reference="GKG-7e-ge8"/>
+                                <include reference="emk-0K-7Kx"/>
+                                <include reference="zgF-qT-FrN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Leo-gu-lsi"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="h23-SE-QgC" kind="presentation" identifier="buzzerSegue" id="i2O-pL-2RR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hjZ-QI-yqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1103" y="524"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pokeball" width="585" height="585"/>
+        <image name="quizz_beta_button" width="846" height="838"/>
+        <image name="quizz_beta_nur_BG" width="2048" height="1536"/>
+        <image name="quizz_beta_ohne_btn" width="2048" height="1536"/>
+    </resources>
+</document>
