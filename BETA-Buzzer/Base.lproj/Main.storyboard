@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C94b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eVI-G3-AN9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14C99d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eVI-G3-AN9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
     </dependencies>
     <scenes>
         <!--Buzzer View Controller-->
@@ -44,6 +44,25 @@
                                     <action selector="buzzerPressed:" destination="h23-SE-QgC" eventType="touchUpInside" id="NuU-mA-h8H"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY1-Vz-bpl">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="Cm1-SF-Vwr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Cm1-SF-Vwr"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Cm1-SF-Vwr"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -59,29 +78,33 @@
                             <constraint firstItem="cII-Rk-Yjb" firstAttribute="bottom" secondItem="5qe-bB-v6z" secondAttribute="top" id="n7O-CE-vLQ"/>
                             <constraint firstAttribute="trailing" secondItem="cII-Rk-Yjb" secondAttribute="trailing" id="obx-6c-Gks"/>
                             <constraint firstAttribute="trailing" secondItem="cII-Rk-Yjb" secondAttribute="trailing" id="pum-X5-RSh"/>
+                            <constraint firstItem="LY1-Vz-bpl" firstAttribute="centerX" secondItem="f1w-Vf-svp" secondAttribute="centerX" id="sBV-bV-f75"/>
+                            <constraint firstItem="5qe-bB-v6z" firstAttribute="top" secondItem="LY1-Vz-bpl" secondAttribute="bottom" constant="34" id="zdI-c3-HRn"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="f1w-Vf-svp"/>
+                                <exclude reference="LY1-Vz-bpl"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Bge-X3-KaA"/>
-                                <exclude reference="RC7-Y4-Kdc"/>
                                 <exclude reference="5pD-fT-OE6"/>
                                 <exclude reference="XMN-UB-Hmi"/>
                                 <exclude reference="atk-YI-pqh"/>
                                 <exclude reference="bRq-9v-W3A"/>
                                 <exclude reference="n7O-CE-vLQ"/>
                                 <exclude reference="pum-X5-RSh"/>
+                                <exclude reference="zdI-c3-HRn"/>
+                                <exclude reference="sBV-bV-f75"/>
+                                <exclude reference="Bge-X3-KaA"/>
+                                <exclude reference="RC7-Y4-Kdc"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="subviews">
                                 <include reference="f1w-Vf-svp"/>
+                                <include reference="LY1-Vz-bpl"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Bge-X3-KaA"/>
-                                <include reference="RC7-Y4-Kdc"/>
                                 <include reference="5pD-fT-OE6"/>
                                 <exclude reference="MUH-QM-re8"/>
                                 <include reference="XMN-UB-Hmi"/>
@@ -92,11 +115,18 @@
                                 <include reference="n7O-CE-vLQ"/>
                                 <exclude reference="obx-6c-Gks"/>
                                 <include reference="pum-X5-RSh"/>
+                                <include reference="zdI-c3-HRn"/>
+                                <include reference="sBV-bV-f75"/>
+                                <include reference="Bge-X3-KaA"/>
+                                <include reference="RC7-Y4-Kdc"/>
                             </mask>
                         </variation>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="timestampLabel" destination="LY1-Vz-bpl" id="B88-hF-DjF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Glf-z5-GhC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,13 +167,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quizz_beta_nur_BG" translatesAutoresizingMaskIntoConstraints="NO" id="4C4-kR-Hnz">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCP-PG-sck">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCP-PG-sck">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="218" id="miO-Rd-gaT"/>
                                     <constraint firstAttribute="width" constant="218" id="ysb-KK-a3M"/>
                                 </constraints>
-                                <state key="normal" image="pokeball">
+                                <state key="normal" image="2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
@@ -162,13 +192,13 @@
                                     <action selector="teamSelected:" destination="eTJ-mz-5MR" eventType="touchUpInside" id="b5v-N7-QMI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whD-hw-e1X">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whD-hw-e1X">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="218" id="MhW-Ra-Mel"/>
                                     <constraint firstAttribute="width" constant="218" id="rMd-NG-czV"/>
                                 </constraints>
-                                <state key="normal" image="pokeball">
+                                <state key="normal" image="1">
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
@@ -187,13 +217,13 @@
                                     <action selector="teamSelected:" destination="eTJ-mz-5MR" eventType="touchUpInside" id="qco-bs-U8b"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2c9-eJ-JwY">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2c9-eJ-JwY">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="218" id="RU9-wm-Ij7"/>
                                     <constraint firstAttribute="height" constant="218" id="ece-ka-a0e"/>
                                 </constraints>
-                                <state key="normal" image="pokeball">
+                                <state key="normal" image="3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
@@ -280,7 +310,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pokeball" width="585" height="585"/>
+        <image name="1" width="760" height="761"/>
+        <image name="2" width="760" height="760"/>
+        <image name="3" width="760" height="760"/>
         <image name="quizz_beta_button" width="846" height="838"/>
         <image name="quizz_beta_nur_BG" width="2048" height="1536"/>
         <image name="quizz_beta_ohne_btn" width="2048" height="1536"/>

@@ -11,6 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 @interface BuzzerViewController ()
 @property (nonatomic) AVAudioPlayer *audioPlayer;
+@property (weak, nonatomic) IBOutlet UILabel *timestampLabel;
 @end
 
 
@@ -19,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSString *path = [NSString stringWithFormat:@"%@/yoshi_%@.mp3", [[NSBundle mainBundle] resourcePath], _TeamId];
+    NSString *path = [NSString stringWithFormat:@"%@/Ozolos_%@.mp3", [[NSBundle mainBundle] resourcePath], _TeamId];
     NSURL *soundUrl = [NSURL fileURLWithPath:path];
     
     // Create audio player object and initialize with URL to sound
@@ -44,6 +45,10 @@
 
 - (IBAction)buzzerPressed:(id)sender {
     [_audioPlayer play];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"HH':'mm':'ss.SSS"];
+    NSString *formattedDateString = [dateFormatter stringFromDate:[NSDate new]];
+    self.timestampLabel.text = formattedDateString;
 }
 
 
