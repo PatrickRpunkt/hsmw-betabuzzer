@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    BOOL b = true;
+    
+    while (b) {
+        NSString *a = @"";
+    }
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
